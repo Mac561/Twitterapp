@@ -16,6 +16,13 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDefaults.standard.bool(forKey: "userLoggedInbb") == true {
+             self.performSegue(withIdentifier: "loginToHome", sender: self)
+        }
+    }
+    
     let myUrl = "https://api.twitter.com/oauth/request_token"
     @IBAction func onLoginButton(_ sender: Any) {
         TwitterAPICaller.client?.login(url: myUrl, success: {

@@ -16,12 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Twitter-img" translatesAutoresizingMaskIntoConstraints="NO" id="NeR-gz-und">
-                                <rect key="frame" x="0.0" y="-22" width="375" height="689"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="TwitterLogoBlue" translatesAutoresizingMaskIntoConstraints="NO" id="SgP-hF-aFx">
+                                <rect key="frame" x="98" y="233" width="200" height="200"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SgP-hF-aFx" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="233" id="LhA-vy-mjH"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="SgP-hF-aFx" secondAttribute="trailing" constant="77" id="MNK-cA-aym"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="SgP-hF-aFx" secondAttribute="bottom" constant="234" id="TN0-3u-uUI"/>
+                            <constraint firstItem="SgP-hF-aFx" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="98" id="rVe-6S-QwK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                     </view>
                 </viewController>
@@ -31,6 +36,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Twitter-img" width="200" height="162.5"/>
+        <image name="TwitterLogoBlue" width="200" height="200"/>
     </resources>
 </document>
